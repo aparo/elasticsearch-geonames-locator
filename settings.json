@@ -1,0 +1,106 @@
+{
+  "mappings": {
+    "geoname": {
+      "properties": {
+        "admin1": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "admin2": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "admin3": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "admin4": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "alternatenames": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "asciiname": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "cc2": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "country": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "elevation": {
+          "type": "long"
+        },
+        "fclass": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "fcode": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "geonameid": {
+          "type": "long"
+        },
+        "gtopo30": {
+          "type": "long"
+        },
+        "latitude": {
+          "type": "float"
+        },
+        "location": {
+          "type": "geo_point"
+        },
+        "longitude": {
+          "type": "float"
+        },
+        "moddate": {
+          "type": "date"
+        },
+        "name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "population": {
+          "type": "long"
+        },
+        "timezone": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "index": {
+      "number_of_shards": "2",
+      "number_of_replicas": "1"
+    }
+  }
+}
